@@ -16,6 +16,16 @@ ASTEROID_MIN_RADIUS = 20
 ASTEROID_KINDS = 3
 ASTEROID_SPAWN_RATE_SECONDS = 0.8
 ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS
+ASTEROID_COLORS = [
+    "white",
+    "plum1",
+    "purple1",
+    "red1",
+    "royalblue1",
+    "seagreen1",
+    "tomato1",
+    "wheat1"
+]
 
 # bullet constants
 SHOT_RADIUS = 5

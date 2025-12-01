@@ -1,6 +1,6 @@
-from constants import ASTEROID_MIN_RADIUS, LINE_WIDTH
+from constants import ASTEROID_COLORS, ASTEROID_MIN_RADIUS, LINE_WIDTH
 from circleshape import CircleShape
-from random import uniform
+from random import uniform, choice
 from logger import log_event
 import pygame
 
@@ -9,9 +9,10 @@ class Asteroid(CircleShape):
     def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
         self.rotation = 0
+        self.color = choice(ASTEROID_COLORS)
 
-    def draw(self, screen, color="white"):
-        pygame.draw.circle(screen, color, self.position, self.radius, LINE_WIDTH)
+    def draw(self, screen):
+        pygame.draw.circle(screen, self.color, self.position, self.radius, LINE_WIDTH)
 
     def update(self, dt):
         self.position += self.velocity * dt
