@@ -2,7 +2,7 @@
 
 - [ ] Add a scoring system
 - [ ] Add an explosion effect for the asteroids
-- [ ] Add acceleration to the player movement
+- [x] Add acceleration to the player movement
 - [ ] Make objects wrap around the screen instead of disappearing
 - [ ] Add a background image
 - [ ] Create different weapon types
